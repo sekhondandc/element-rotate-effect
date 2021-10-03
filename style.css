@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #292929;
+}
+.rotate{
+    width: 100px;
+    height: 100px;
+    transform-origin: center center;
+}
+.rotate i{
+    font-size: 100px;
+    color: #ffffff;
+}
+.rotate:hover{
+    animation: animate_rotate 0.5s linear infinite;
+}
+@keyframes animate_rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-180deg);
+    }
+}
